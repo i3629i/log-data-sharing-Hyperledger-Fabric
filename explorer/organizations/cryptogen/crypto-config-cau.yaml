@@ -1,0 +1,10 @@
+PeerOrgs:
+  - Name: cau
+    Domain: cau.example.com
+    EnableNodeOUs: true
+    Template:
+      Count: 1
+      SANS:
+        - localhost
+    Users:
+      Count: 1

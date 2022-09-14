@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <h1>hello world</h1>
+     <h1>Fabric DApp Test</h1>
+        <div id="allAssets">
+            <h3>Current All Assets</h3>
+            <form action="/GetAllAssets" method="get">
+                Get All Assets : <input type="submit" value="get all assets">
+                <!-- <button type="button" onclick="location.href='getAllAssets.html'">get all asset</button> -->
+            </form>
+        </div>
+
+        <div id="allasset">
+            <h3>Read</h3>
+            <form action="/GetAllAssets" method="get">
+                Asset ID : <input name="SC" type="text" size="20"><br>
+                <input type="submit" value="read asset">
+            </form>
+        </div>
+
+        <div id="readAsset">
+            <h3>Read Asset</h3> 
+            <form action="/ReadAsset" method="get">
+                Asset ID : <input name="id" type="text" size="20"><br>
+                <input type="submit" value="read asset"> 
+            </form>
+        </div>
+
+        <div id="CreateAsset">
+            <h3>Create Asset</h3> 
+            <form action="/CreateAsset" method="get">
+                <!-- id : <input name="id", type="text" style="width:900px;"><br> -->
+                <textarea name="id" style="width:1000px; height: 300px;"></textarea><br>
+                <!-- Color : <input name="color" type="text" size="50"><br>
+                Size : <input name="size" type="text" size="20"><br>
+                Owner : <input name="owner" type="text" size="20"><br>
+                AppraisedValue : <input name="appraisedValue" type="text" size="20"><br> -->
+                <input type="submit" value="create asset"> 
+            </form>
+        </div>
+  </body>
+</html>
